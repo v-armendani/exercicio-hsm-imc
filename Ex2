@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    	<meta charset=“utf-8”>
+    </head>
+
+    <body>
+
+        <script>
+		
+		var nome = prompt("Digite o Nome.");
+		var idade = prompt("Digite a idade.");
+		var altura = prompt("Digite a altura em metros.");
+		var peso = prompt("Digite o peso em Kg.");
+		var imc = peso / altura ** 2;
+
+		if (imc >= 18.5 && <= 24.9){
+			alert("O IMC do(a) " + nome + "é " + imc);
+		} else if (imc < 18.5){
+			alert("O IMC do(a) " + nome + "é " + imc + "e está na linha de Magreza");
+		} else if (imc >= 25 && <= 29.9){
+			alert("O IMC do(a) " + nome + "é " + imc + "e está na linha de Sobrepeso");
+		} else if (imc >= 30 && <= 39.9){
+			alert("O IMC do(a) " + nome + "é " + imc + "e está na linha de Obesidade");
+		} else (imc >= 40){
+			alert("O IMC do(a) " + nome + "é " + imc + "e está na linha de Obesidade grave");
+		}
+
+        </script>
+
+    </body>
+
+</html> 
